@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="calculadora"> <h1>INTERACCIONES</h1>
+            <div>
+                <label for="numero1"></label><input class="botton" type="number" id="numero1" required placeholder="INGRESE EL PRIMER NUMERO">
+            </div>
+            <div>
+                <label for="numero2"></label><input class="botton" type="number" id="numero2" required placeholder="INGRESE EL SEGUNDO NUMERO">
+            </div>
+            <div>
+                <button class="botton1" type="button" onclick="operaciones('suma')">Sumar</button>
+                <button class="botton1" type="button" onclick="operaciones('resta')">Restar</button>
+                <button class="botton1" type="button" onclick="operaciones('multiplicacion')">Multiplicar</button>
+            </div>
+            <div>
+                <button class="botton1" type="button" onclick="operaciones('dividir')">Dividir</button>
+                <button class="botton1" type="button" onclick="operaciones('mod%')">Mod(%)</button>
+            </div>
+        </form>
+        <div id="respuesta"></div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
